@@ -1,5 +1,8 @@
 package com.gmail.slonjsak.sandi
 
+/**
+ * Example class.
+ */
 class Kutils {
   /**
    * @param target Array from which to remove duplicate entries.
