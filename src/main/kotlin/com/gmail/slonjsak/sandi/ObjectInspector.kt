@@ -33,8 +33,8 @@ object ObjectInspector {
    * returned
    * @return PropertyDescriptor's name
    */
-  private fun readPropertyName(propertyDescriptor: PropertyDescriptor): String
-    = propertyDescriptor.name
+  private fun readPropertyName(propertyDescriptor: PropertyDescriptor): String =
+    propertyDescriptor.name
 
   /**
    * Returns PropertyDescriptor name
@@ -44,6 +44,8 @@ object ObjectInspector {
    * @param obj Object whose value needs to be read
    * @return PropertyDescriptor's value in given object
    */
-  private fun readPropertyValue(propertyDescriptor: PropertyDescriptor,
-    obj: Any) = propertyDescriptor.readMethod.invoke(obj)
+  private fun readPropertyValue(
+    propertyDescriptor: PropertyDescriptor,
+    obj: Any
+  ) = propertyDescriptor.readMethod.invoke(obj)
 }
