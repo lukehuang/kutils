@@ -11,18 +11,12 @@ buildscript {
   }
 }
 
-plugins {
-  id 'net.saliman.cobertura' version '2.3.1'
-  id 'com.github.kt3k.coveralls' version '2.8.2'
-}
-
-cobertura.coverageFormats = ['html', 'xml']
-
 group 'com.sandislonjsak'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'kotlin'
 apply plugin: 'org.jetbrains.dokka'
+apply plugin: 'jacoco'
 
 dokka {
   outputFormat = 'html'
@@ -43,4 +37,11 @@ compileKotlin {
 }
 compileTestKotlin {
   kotlinOptions.jvmTarget = "1.8"
+}
+
+jacocoTestReport {
+  reports {
+    xml.enabled true
+    html.enabled false
+  }
 }
