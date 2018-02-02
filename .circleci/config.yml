@@ -40,5 +40,5 @@ jobs:
 
       # run tests!
       - run: gradle test
-      - run: if [ -e ./gradlew ]; then ./gradlew jacocoTestReport;else gradle jacocoTestReport;fi
+      - run: gradle jacocoTestReport;fi
       - run: bash <(curl -s https://codecov.io/bash)
