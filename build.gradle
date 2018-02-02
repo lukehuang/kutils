@@ -11,7 +11,7 @@ buildscript {
   }
 }
 
-group 'com.gmail.slonjsak.sandi'
+group 'com.sandislonjsak'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'kotlin'

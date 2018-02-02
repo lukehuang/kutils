@@ -1,4 +1,4 @@
-package com.gmail.slonjsak.sandi
+package com.sandislonjsak.kutils
 
 import java.beans.Introspector
 import java.beans.PropertyDescriptor

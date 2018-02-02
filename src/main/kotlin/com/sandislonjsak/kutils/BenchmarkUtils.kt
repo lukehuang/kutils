@@ -1,4 +1,4 @@
-package com.gmail.slonjsak.sandi
+package com.sandislonjsak.kutils
 
 /**
  * Gives info about function performance.
@@ -10,7 +10,7 @@ object BenchmarkUtils {
    * @param body Function whose execution time will be measured
    * @return How long it took for function to complete in milliseconds.
    */
-  fun <T> measureExecTimeMillis(body:() -> T): Long {
+  fun <T> measureExecTimeMillis(body: () -> T): Long {
     val start = System.currentTimeMillis()
 
     body.invoke()

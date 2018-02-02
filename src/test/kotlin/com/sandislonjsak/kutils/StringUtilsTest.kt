@@ -1,7 +1,7 @@
-package com.gmail.slonjsak.sandi
+package com.sandislonjsak.kutils
 
-import org.junit.Test
 import org.junit.Assert.assertEquals
+import org.junit.Test
 
 class StringUtilsTest {
   @Test
