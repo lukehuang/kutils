@@ -56,6 +56,6 @@ class DateUtilsTest {
 
     assertEquals(Date(date.time - 10000), DateUtils.subtractSeconds(date, 10))
     assertEquals(Date(date.time - 100000), DateUtils.subtractSeconds(date, 100))
-    assertEquals(date, DateUtils.addSeconds(date, -10))
+    assertEquals(date, DateUtils.subtractSeconds(date, -10))
   }
 }
