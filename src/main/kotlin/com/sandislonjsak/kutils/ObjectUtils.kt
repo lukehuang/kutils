@@ -6,7 +6,7 @@ import java.beans.PropertyDescriptor
 /**
  * Operations on Any object.
  */
-object ObjectInspector {
+object ObjectUtils {
   /**
    * Retrieves property names and values from Any object and returns them as
    * HashMap<K,V> where property name is K and property value is V
