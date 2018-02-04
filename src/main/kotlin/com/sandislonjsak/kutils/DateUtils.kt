@@ -25,6 +25,17 @@ object DateUtils {
     add(date, Calendar.DAY_OF_MONTH, days)
 
   /**
+   * Adds hours to target Date.
+   * If hours are negative returns date without modifying it.
+   *
+   * @param date Date to which hours need to be added.
+   * @param hours Amount of hours to be added to date.
+   * @return Date plus hours
+   */
+  fun addHours(date: Date, hours: Int): Date =
+    add(date, Calendar.HOUR, hours)
+
+  /**
    * Adds milliseconds to target Date.
    * If milliseconds are negative returns date without modifying it.
    *
