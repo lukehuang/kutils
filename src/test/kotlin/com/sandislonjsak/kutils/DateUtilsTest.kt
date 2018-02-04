@@ -6,7 +6,7 @@ import java.util.*
 
 class DateUtilsTest {
   @Test
-  fun `test addDays`(){
+  fun `test addDays`() {
     val date = Date()
 
     assertEquals(Date(date.time + 86400000), DateUtils.addDays(date, 1))
@@ -42,7 +42,7 @@ class DateUtilsTest {
   }
 
   @Test
-  fun `test subtractDays`(){
+  fun `test subtractDays`() {
     val date = Date()
 
     assertEquals(Date(date.time - 86400000), DateUtils.subtractDays(date, 1))
