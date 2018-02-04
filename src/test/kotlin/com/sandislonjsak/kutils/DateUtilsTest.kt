@@ -15,6 +15,15 @@ class DateUtilsTest {
   }
 
   @Test
+  fun `test addMilliseconds`() {
+    val date = Date()
+
+    assertEquals(Date(date.time + 10), DateUtils.addMilliseconds(date, 10))
+    assertEquals(Date(date.time + 100), DateUtils.addMilliseconds(date, 100))
+    assertEquals(date, DateUtils.addMilliseconds(date, -10))
+  }
+
+  @Test
   fun `test addMinutes`() {
     val date = Date()
 
