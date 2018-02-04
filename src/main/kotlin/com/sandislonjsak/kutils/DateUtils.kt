@@ -32,7 +32,7 @@ object DateUtils {
    * @param milliseconds Amount of milliseconds to be added to date.
    * @return Date plus milliseconds
    */
-  fun addMilliSeconds(date: Date, milliseconds: Int): Date =
+  fun addMilliseconds(date: Date, milliseconds: Int): Date =
     add(date, Calendar.MILLISECOND, milliseconds)
 
   /**
@@ -76,7 +76,7 @@ object DateUtils {
    * @param milliseconds Amount of milliseconds to be subtracted from date.
    * @return Date minus milliseconds
    */
-  fun subtractMilliSeconds(date: Date, milliseconds: Int): Date =
+  fun subtractMilliseconds(date: Date, milliseconds: Int): Date =
     subtract(date, Calendar.MILLISECOND, milliseconds)
 
   /**
