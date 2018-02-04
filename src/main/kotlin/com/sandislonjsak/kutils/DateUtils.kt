@@ -58,6 +58,17 @@ object DateUtils {
     add(date, Calendar.MINUTE, minutes)
 
   /**
+   * Adds moths to target Date.
+   * If moths are negative returns date without modifying it.
+   *
+   * @param date Date to which months need to be added.
+   * @param months Amount of months to be added to date.
+   * @return Date plus months
+   */
+  fun addMonths(date: Date, months: Int): Date =
+    add(date, Calendar.MONTH, months)
+
+  /**
    * Adds seconds to target Date.
    * If seconds are negative returns date without modifying it.
    *
@@ -69,6 +80,28 @@ object DateUtils {
     add(date, Calendar.SECOND, seconds)
 
   /**
+   * Adds weeks to target Date.
+   * If weeks are negative returns date without modifying it.
+   *
+   * @param date Date to which weeks need to be added.
+   * @param weeks Amount of weeks to be added to date.
+   * @return Date plus weeks
+   */
+  fun addWeeks(date: Date, weeks: Int): Date =
+    add(date, Calendar.WEEK_OF_YEAR, weeks)
+
+  /**
+   * Adds years to target Date.
+   * If years are negative returns date without modifying it.
+   *
+   * @param date Date to which years need to be added.
+   * @param years Amount of years to be added to date.
+   * @return Date plus years
+   */
+  fun addYears(date: Date, years: Int): Date =
+    add(date, Calendar.YEAR, years)
+
+  /**
    * Subtract days from target Date.
    * If days are negative returns date without modifying it.
    *
@@ -78,6 +111,17 @@ object DateUtils {
    */
   fun subtractDays(date: Date, days: Int): Date =
     subtract(date, Calendar.DAY_OF_MONTH, days)
+
+  /**
+   * Subtract hours from target Date.
+   * If hours are negative returns date without modifying it.
+   *
+   * @param date Date from which hours need to be subtracted.
+   * @param hours Amount of hours to be subtracted from date.
+   * @return Date minus hours
+   */
+  fun subtractHours(date: Date, hours: Int): Date =
+    subtract(date, Calendar.HOUR, hours)
 
   /**
    * Subtracts milliseconds from target Date.
@@ -102,6 +146,17 @@ object DateUtils {
     subtract(date, Calendar.MINUTE, minutes)
 
   /**
+   * Subtracts months from target Date.
+   * If months are negative returns date without modifying it.
+   *
+   * @param date Date from which months need to be subtracted.
+   * @param minutes Amount of months to be subtracted from date.
+   * @return Date minus months
+   */
+  fun subtractMonths(date: Date, months: Int): Date =
+    subtract(date, Calendar.MONTH, months)
+
+  /**
    * Subtracts seconds from target Date.
    * If seconds are negative returns date without modifying it.
    *
@@ -111,6 +166,28 @@ object DateUtils {
    */
   fun subtractSeconds(date: Date, seconds: Int): Date =
     subtract(date, Calendar.SECOND, seconds)
+
+  /**
+   * Subtracts weeks from target Date.
+   * If weeks are negative returns date without modifying it.
+   *
+   * @param date Date from which weeks need to be subtracted.
+   * @param seconds Amount of weeks to be subtracted from date.
+   * @return Date minus weeks
+   */
+  fun subtractWeeks(date: Date, weeks: Int): Date =
+    subtract(date, Calendar.WEEK_OF_YEAR, weeks)
+
+  /**
+   * Subtracts years from target Date.
+   * If years are negative returns date without modifying it.
+   *
+   * @param date Date from which years need to be subtracted.
+   * @param years Amount of years to be subtracted from date.
+   * @return Date minus years
+   */
+  fun subtractYears(date: Date, years: Int): Date =
+    subtract(date, Calendar.YEAR, years)
 
   /**
    * Add given amount of measurement to date.
