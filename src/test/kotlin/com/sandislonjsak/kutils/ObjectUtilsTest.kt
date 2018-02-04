@@ -14,4 +14,15 @@ class ObjectUtilsTest {
 
     assertEquals(expected, ObjectUtils.getPropertiesAndValues(testHelper))
   }
+
+  @Test
+  fun `test checkIfObjectHasProperty`() {
+    val testHelper = TestHelper("test", 10)
+
+    assertEquals(true, ObjectUtils.checkIfObjectHasProperty(testHelper, "name"))
+    assertEquals(true, ObjectUtils.checkIfObjectHasProperty(testHelper, "age"))
+    assertEquals(
+      false, ObjectUtils.checkIfObjectHasProperty(testHelper, "surname")
+    )
+  }
 }
