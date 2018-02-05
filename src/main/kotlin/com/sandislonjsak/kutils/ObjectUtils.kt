@@ -36,7 +36,7 @@ object ObjectUtils {
     val propertyDescriptors = getPropertyDescriptors(obj)
 
     propertyDescriptors.forEach { descriptor ->
-      map.put(readPropertyName(descriptor), readPropertyValue(descriptor, obj))
+      map[readPropertyName(descriptor)] = readPropertyValue(descriptor, obj)
     }
 
     return map
