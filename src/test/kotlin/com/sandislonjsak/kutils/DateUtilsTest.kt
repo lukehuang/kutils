@@ -3,7 +3,9 @@ package com.sandislonjsak.kutils
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
-import java.util.*
+import java.util.Calendar
+import java.util.Date
+import java.util.GregorianCalendar
 
 class DateUtilsTest {
   private var date = Date()

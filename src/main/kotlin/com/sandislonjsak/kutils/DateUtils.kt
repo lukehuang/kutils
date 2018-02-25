@@ -1,6 +1,7 @@
 package com.sandislonjsak.kutils
 
-import java.util.*
+import java.util.Calendar
+import java.util.Date
 
 /**
  * Operations on java.util.Date class.
