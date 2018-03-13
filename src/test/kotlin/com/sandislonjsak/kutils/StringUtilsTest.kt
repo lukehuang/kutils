@@ -6,6 +6,6 @@ import org.junit.Test
 class StringUtilsTest {
   @Test
   fun `test remove all whitespaces`() {
-    assertEquals("test", StringUtils.removeAllWhitespaces(" te s t   "))
+    assertEquals("test", StringUtils.removeAllWhitespaces(" te s  t   "))
   }
 }
